@@ -161,21 +161,21 @@ def capture_content_to_recognizer(app_window, category, engine='paddle'):
     top = app_window.topleft[1]
     content = ''
     if '周目' in category:
-        content = capture_img_to_recognizer(left + 5, top + 440, left + 150, top + 490, 'round.png', 'chi_sim')
+        content = capture_img_to_recognizer(left + 5, top + 440, left + 150, top + 490, 'save/round.png', 'chi_sim')
     elif '总攻' in category:
-        content = capture_img_to_recognizer(left + 7, top + 370, left + 120, top + 450, 'fight.png', 'chi_sim')
+        content = capture_img_to_recognizer(left + 7, top + 370, left + 120, top + 450, 'save/fight.png', 'chi_sim')
     elif '血条' in category:
-        content = capture_img_to_recognizer(left + 420, top + 370, left + 490, top + 430, 'blood.png')
+        content = capture_img_to_recognizer(left + 420, top + 370, left + 490, top + 430, 'save/blood.png')
     elif '出现' in category:
-        content = capture_img_to_recognizer(left + 10, top + 395, left + 490, top + 490, 'show.png', 'chi_sim')
+        content = capture_img_to_recognizer(left + 10, top + 395, left + 490, top + 490, 'save/show.png', 'chi_sim')
     elif '记载' in category:
-        content = capture_img_to_recognizer(left + 200, top + 75, left + 300, top + 105, 'write.png', 'chi_sim')
+        content = capture_img_to_recognizer(left + 200, top + 75, left + 300, top + 105, 'save/write.png', 'chi_sim')
     elif 'save' in category:
-        content = capture_img_to_recognizer(left + 30, top + 395, left + 110, top + 450, 'save.png')
+        content = capture_img_to_recognizer(left + 30, top + 395, left + 110, top + 450, 'save/save.png')
     elif 'load' in category:
-        content = capture_img_to_recognizer(left + 30, top + 395, left + 110, top + 450, 'load.png')
+        content = capture_img_to_recognizer(left + 30, top + 395, left + 110, top + 450, 'save/load.png')
     elif 'exit' in category:
-        content = capture_img_to_recognizer(left + 250, top + 215, left + 340, top + 320, 'exit.png', 'chi_sim')
+        content = capture_img_to_recognizer(left + 250, top + 215, left + 340, top + 320, 'save/exit.png', 'chi_sim')
     return content
 
 
